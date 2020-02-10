@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/store_log', function(req, res){
-  console.log('a')
   client.index({
     index: 'all_log',
     type: 'system_log',
